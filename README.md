@@ -1,1 +1,0 @@
-# Js_homework_6
