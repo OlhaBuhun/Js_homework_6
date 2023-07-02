@@ -16,7 +16,6 @@ const totalIndex = itemRef.forEach((element, index, arr)=> {
   console.log('Elements:',li.children.length);
 })
 
-console.log(totalIndex);
 
 
 

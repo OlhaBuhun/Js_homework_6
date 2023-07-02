@@ -16,6 +16,8 @@ function onPlusClick(event){
   console.log(event.currentTarget.value);
   counterValue.textContent ++
 }
+
+
 function onMinusClick(event){
 
   if(counterValue.textContent <= 0){
