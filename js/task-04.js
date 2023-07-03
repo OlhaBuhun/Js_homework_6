@@ -5,26 +5,22 @@
 const btnDecrement = document.querySelector('button[data-action="decrement"]');
 const btnIncrement = document.querySelector('button[data-action="increment"]');
 
-const counterValue = document.querySelector('#value');
-// console.log(counterValue);
+const spanValue = document.querySelector('#value');
 
 btnDecrement.addEventListener('click', onMinusClick);
 btnIncrement.addEventListener('click', onPlusClick);
 
 
-function onPlusClick(event){
-  console.log(event.currentTarget.value);
-  counterValue.textContent ++
-}
 
+let counterValue = 0;
 
-function onMinusClick(event){
+function onPlusClick(){
+  counterValue = spanValue.textContent ++;
+};
 
-  if(counterValue.textContent <= 0){
-    counterValue.textContent = 0;
-  }else{
-    
-    counterValue.textContent --;
-  }
+function onMinusClick(){
+  counterValue = spanValue.textContent --;
   
-}
+};
+
+
